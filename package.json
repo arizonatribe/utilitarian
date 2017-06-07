@@ -1,0 +1,50 @@
+{
+  "name": "utilitarian",
+  "version": "1.0.0",
+  "description": "Low-level JavaScript utility functions that service many different needs in a front-end or back-end JavaScript application",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "BABEL_ENV=production babel ./ --out-dir dist --ignore node_modules/",
+    "prepublish": "npm run build",
+    "clean": "rm -rf ./dist/*",
+    "test": "echo we don't need no tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arizonatribe/utilitarian.git"
+  },
+  "keywords": [
+    "javascript",
+    "es6",
+    "tools",
+    "toolkit",
+    "node",
+    "utils",
+    "utilitarian",
+    "utilities"
+  ],
+  "author": "David Nunez <arizonatribe@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/arizonatribe/utilitarian#readme",
+  "dependencies": {
+    "crypto": "0.0.3",
+    "md5": "2.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "6.23.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.23.0",
+    "babel-plugin-transform-object-rest-spread": "6.23.0",
+    "eslint": "3.15.0",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-react": "6.10.0"
+  },
+  "babel": {
+    "plugins": [
+      "transform-object-rest-spread",
+      "transform-es2015-modules-commonjs"
+    ]
+  }
+}
