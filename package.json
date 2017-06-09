@@ -1,6 +1,6 @@
 {
   "name": "utilitarian",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Low-level JavaScript utility functions that service many different needs in a front-end or back-end JavaScript application",
   "main": "index.js",
   "scripts": {
@@ -26,11 +26,12 @@
     "utilities"
   ],
   "author": "David Nunez <arizonatribe@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/arizonatribe/utilitarian#readme",
   "dependencies": {
     "crypto": "0.0.3",
-    "md5": "2.2.1"
+    "md5": "2.2.1",
+    "url": "0.11.0"
   },
   "devDependencies": {
     "babel-cli": "6.23.0",
@@ -47,7 +48,12 @@
   },
   "babel": {
     "presets": [
-      ["es2015", {"modules": false}]
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ]
     ],
     "plugins": [
       "transform-object-rest-spread",
