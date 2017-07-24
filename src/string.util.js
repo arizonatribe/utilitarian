@@ -153,11 +153,11 @@ function createPbkdf2Hash(salt, secret) {
         throw new Error('Missing Secret value for creating Hash');
     }
 
-    return crypto.pbkdf2Sync(secret, salt, 1000, 64).toString('base64');
+    return crypto.pbkdf2Sync(secret, salt, 1000, 64, 'sha512').toString('base64');
 }
 
 function createShaHash(str) {
-    return crypto.createHash('sha256').update(str, 'base64').digest('base64');
+    return crypto.createHash('sha512').update(str, 'base64').digest('base64');
 }
 
 /**
