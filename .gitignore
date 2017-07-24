@@ -2,3 +2,5 @@
 /*.js
 .npmrc
 dist/
+package-lock.json
+

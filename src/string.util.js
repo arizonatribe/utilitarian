@@ -148,16 +148,24 @@ function generateBase64String() {
     return crypto.randomBytes(64).toString('base64');
 }
 
-function createPbkdf2Hash(salt, secret) {
+function createPbkdf2Hash(salt, secret, digest = 'sha256') {
     if (!secret) {
         throw new Error('Missing Secret value for creating Hash');
     }
 
-    return crypto.pbkdf2Sync(secret, salt, 1000, 64, 'sha512').toString('base64');
+    if (!crypto.getHashes().includes(digest)) {
+        throw new Error(`${digest} is not a valid digest option to create a hash`);
+    }
+
+    return crypto.pbkdf2Sync(secret, salt, 1000, 64, digest).toString('base64');
 }
 
-function createShaHash(str) {
-    return crypto.createHash('sha512').update(str, 'base64').digest('base64');
+function createShaHash(str, digest = 'sha256') {
+    if (!crypto.getHashes().includes(digest)) {
+        throw new Error(`${digest} is not a valid digest option to verifying this hash`);
+    }
+
+    return crypto.createHash(digest).update(str, 'base64').digest('base64');
 }
 
 /**

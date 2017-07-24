@@ -1,6 +1,6 @@
 {
   "name": "utilitarian",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Low-level JavaScript utility functions that service many different needs in a front-end or back-end JavaScript application",
   "main": "index.js",
   "scripts": {
