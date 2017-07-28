@@ -45,7 +45,7 @@ function numberMe(num, precision = 3) {
 
 /**
  * Generates a unique 36 character hyphenated GUID
- * @method galaxyutils.string.util#generateUUID
+ * @method utilitarian.string.util#generateUUID
  * @returns {string} A string GUID
  */
 function generateUUID() {
@@ -70,7 +70,7 @@ function randomNumber(len) {
 /**
  * Generates a random string of text of a given length.
  * Will generate an alpha-numeric string unless you specify a different character set as the second argument
- * @method galaxyutils.string.util#randomString
+ * @method utilitarian.string.util#randomString
  * @param {number} length The length of the string to generate
  * @param {string|number} [charSet] optional set of characters to use when generating a random string
  * (defaults to full alpha-numeric set)
@@ -170,7 +170,7 @@ function createShaHash(str, digest = 'sha256') {
 
 /**
  * Converts a string value to `Uint8array`
- * @method galaxyutils.string.util#toUint
+ * @method utilitarian.string.util#toUint
  * @param {string} str A string value to convert to `Uint8array`
  * @returns {Uint8Array} A `Uint8Array` representation of the original string
  */
@@ -187,7 +187,7 @@ function toUint(str) {
 
 /**
  * Converts a string value to an `ArrayBuffer`
- * @method galaxyutils.string.util#toArrayBuffer
+ * @method utilitarian.string.util#toArrayBuffer
  * @param {string} str A string value to convert to `ArrayBuffer`
  * @returns {Uint8Array} An `ArrayBuffer` representation of the original string
  */
@@ -205,7 +205,7 @@ function toArrayBuffer(str) {
 /**
  * Converts a base64 encoded string to a `data:image/png` prefixed string,
  * ready to embed into an img HTML element
- * @method galaxyutils.string.util#toBase64ImageSrc
+ * @method utilitarian.string.util#toBase64ImageSrc
  * @param {string} str A base64 encoded image string
  * @returns {string} An formatted base64 image string
  */

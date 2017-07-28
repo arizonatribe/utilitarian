@@ -5,7 +5,7 @@ const {isNullOrUndefined} = isUtils;
 /**
  * Wrapper for the `console.log`, `console.debug`, `console.error`, etc.,
  * functions, but allows turn debug/info/log events on or off.
- * @name galaxyutils.logger
+ * @name utilitarian.logger
  * @class
  * @constructor
  */

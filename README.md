@@ -1,6 +1,10 @@
 # Utilitarian - Common, Low-Level JavaScript Utility & Helper Functions
 
-This module contains low-level JavaScript functions that I've found useful over the years when participating in NodeJS or React/Angular/Vue projects. I realize anytime someone creates/collects a suite of helper functions they tend to represent that particular person's stylistic preference on the proper balance between functionality and abstraction/convenience, and this library is no different. Perhaps each function or shape of these APIs aren't the most common or standard way to accomplish a given task, but recommendations for improvement or changes or new features are always welcome through [Pull Requests](https://github.com/arizonatribe/utilitarian/pull/new/master) (especially performance improvement recommendations).
+This module contains low-level JavaScript functions that I find myself using frequently on NodeJS or React/Angular/Vue projects.  I would often start a JavaScript project by dropping most of these functions into a `utils.js` file in the project root, however this was typically for monolithic UI projects that would occupy my time for nearly a year at a time (or more). Once I found myself working on handfuls of small NodeJS microservices and smaller UI applications, the need to place these utils into an npm module became obvious.
+
+This package includes type-checkers, array & object mappers, http code constants, some of my favorite CSS colors, constants and mixins for responsive design, connect.js request parsing functions, random string/number generators, and event helpers. Most of these utils are so low level that you've undoubtedly written functions like these (especially those in the `is.util.js` file) but hopefully you'll find it useful to have them organized into one collection that can be injected and used piecemeal on a front-end or back-end JavaScript application.
+
+During my time with [Mentor](https://www.mentor.com/) I attempted to fully polish these APIs, splitting them up into multiple files so that you can import smaller portions of this library when your particular needs are minimal. Much of this package's organizational structure was influenced by what I learned while there, creating one NodeJS service, and then another, rinse-and-repeat.
 
 ## Installation
 

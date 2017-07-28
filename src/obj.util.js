@@ -76,7 +76,7 @@ function getNestedProperty(obj, dotPath) {
 * Transforms the properties in an object to an encoded URI query string.
 * <b>Note</b>: works best if the object is in the format of
 *   { propertyName: propertyValue, propertyName2: propertyValue2 . . }
-* @method galaxyutils.obj.util#toURI
+* @method utilitarian.obj.util#toURI
 * @param {object} obj A JSON object to serialize into a query string
 * @param {boolean} [dontEncode] An optional boolean value to control whether
 * or not to URI encode the resulting query string (defaults to `false`)
@@ -109,7 +109,7 @@ function toURI(obj, dontEncode) {
 
 /**
 * Serializes an object's properties into JSON string then URI encoded
-* @method galaxyutils.obj.util#toParam
+* @method utilitarian.obj.util#toParam
 * @param {object} obj A JSON object to serialize into a query string parameter
 * @param {boolean} [dontEncode] An optional boolean value to control whether or not to URI encode the resulting query parameter (defaults to `false`)
 * @returns {string} A query string parameter representation of the original object

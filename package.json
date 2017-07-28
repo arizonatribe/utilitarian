@@ -1,6 +1,6 @@
 {
   "name": "utilitarian",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Low-level JavaScript utility functions that service many different needs in a front-end or back-end JavaScript application",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,9 @@
     "utilities"
   ],
   "author": "David Nunez <arizonatribe@gmail.com>",
+  "contributors": [
+    "Steve McDowall <steve_mcdowall@mentor.com>"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/arizonatribe/utilitarian#readme",
   "dependencies": {
