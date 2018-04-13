@@ -20,6 +20,7 @@ Latest release:
 
 ## Usage
 
+```js
     import {isEmpty} from 'utilitarian/is.util';
 
     function fullName({first, last, middle} = {}) {
@@ -29,9 +30,11 @@ Latest release:
 
         return `${first} ${last}`;
     }
+```
 
 Or:
 
+```js
     import utils from 'utilitarian';
 
     function fullName({first, last, middle, title, suffix} = {}) {
@@ -39,6 +42,7 @@ Or:
             [title, first, middle, last, suffix].filter(name => name)
         ) || utils.string.randomString(5);
     }
+```
 
 ## Overview
 
